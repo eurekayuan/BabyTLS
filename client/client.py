@@ -66,7 +66,7 @@ class Client(object):
                     self.pubkeyServer = rsa.PublicKey.load_pkcs1(base64.b64decode(cert["publicKey"].encode()))
                 else:
                     print("verification fails, connection drops")
-                    break
+                    return
             elif step == message.MessageType.CERTIFICATE and type == "SERVER_HELLO_DONE":
                 print(msg["body"])
                 self.exchange()
