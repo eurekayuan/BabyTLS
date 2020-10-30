@@ -1,0 +1,8 @@
+{
+    "default": {
+        "name": "default",
+        "handshake": "RSA",
+        "data": "DES",
+        "hash": "MD5"
+    }
+}
